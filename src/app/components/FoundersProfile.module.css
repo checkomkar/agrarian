@@ -1,0 +1,403 @@
+.foundersProfile {
+  padding: 7rem 0;
+  background-color: white;
+  position: relative;
+}
+
+.foundersProfile::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background-color: var(--light-gray);
+  z-index: 0;
+}
+
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--dark-text);
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: var(--medium-text);
+}
+
+.foundersContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+  margin-top: 3rem;
+}
+
+.founder {
+  background: white;
+  border-radius: 16px;
+  padding: 2.5rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.founder:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.founder:hover .founderImage {
+  transform: scale(1.05);
+}
+
+.founderHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.founderImageContainer {
+  width: 300px;
+  height: 300px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.5rem;
+}
+
+.founderImage {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease;
+}
+
+.founderName {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: var(--dark-text);
+}
+
+.founderRole {
+  font-size: 1rem;
+  color: var(--primary);
+  font-weight: 500;
+}
+
+.founderDetails {
+  padding: 0;
+}
+
+.founderHighlights {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.highlight {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.bulletPoint {
+  width: 8px;
+  height: 8px;
+  background-color: var(--primary);
+  border-radius: 50%;
+  margin-top: 0.5rem;
+  margin-right: 1rem;
+  flex-shrink: 0;
+}
+
+.highlight p {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--medium-text);
+}
+
+@media (max-width: 1200px) {
+  .foundersContainer {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+  }
+
+  .founderImageContainer {
+    width: 280px;
+    height: 280px;
+  }
+}
+
+@media (max-width: 992px) {
+  .foundersContainer {
+    grid-template-columns: 1fr;
+    max-width: 700px;
+    margin: 3rem auto 0;
+  }
+
+  .founderHeader {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .founderImageContainer {
+    margin-right: 2rem;
+    margin-bottom: 0;
+    width: 220px;
+    height: 220px;
+  }
+
+  .founderTitleWrapper {
+    text-align: left;
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+  }
+  
+  .founderHeader {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .founderDetails {
+    padding: 0;
+  }
+  
+  .founderImageContainer {
+    width: 180px;
+    height: 180px;
+    margin-right: 0;
+    margin-bottom: 1.5rem;
+  }
+  
+  .founderName {
+    font-size: 1.3rem;
+  }
+
+  .slide {
+    grid-template-columns: 1fr;
+    gap: 0;
+    justify-items: center;
+  }
+
+  .founder {
+    max-width: 90%;
+    margin: 0 auto;
+    width: 100%;
+  }
+  
+  .sliderWrapper {
+    padding: 0 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  .founderHeader {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .founderImageContainer {
+    margin-right: 0;
+    margin-bottom: 1.5rem;
+    width: 160px;
+    height: 160px;
+  }
+
+  .founderTitleWrapper {
+    text-align: center;
+  }
+
+  .container {
+    padding: 0 1rem;
+  }
+
+  .sliderWrapper {
+    padding: 0 20px;
+  }
+
+  .sliderButton {
+    width: 36px;
+    height: 36px;
+    display: flex;
+  }
+  
+  .sliderButton svg {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .prevButton {
+    left: -5px;
+  }
+  
+  .nextButton {
+    right: -5px;
+  }
+
+  .founder {
+    padding: 1.5rem;
+  }
+}
+
+.sliderWrapper {
+  position: relative;
+  max-width: 100%;
+  overflow: visible;
+  margin-top: 3rem;
+  padding: 0 50px;
+}
+
+.sliderContainer {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease;
+  width: 100%;
+}
+
+.slide {
+  flex: 0 0 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.5rem;
+  padding: 10px 0 30px;
+}
+
+.sliderButton {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: white;
+  color: var(--dark-text);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  z-index: 10;
+}
+
+.sliderButton:hover {
+  background-color: var(--primary);
+  color: white;
+  box-shadow: 0 10px 25px rgba(39, 174, 96, 0.2);
+}
+
+.prevButton {
+  left: 10px;
+}
+
+.nextButton {
+  right: 10px;
+}
+
+.sliderDots {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-top: 2.5rem;
+}
+
+.sliderDot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #e2e8f0;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.sliderDot:hover {
+  background-color: #cbd5e1;
+}
+
+.activeDot {
+  background-color: var(--primary);
+  transform: scale(1.2);
+}
+
+@media (max-width: 1200px) {
+  .slide {
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .slide {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+  
+  .sliderWrapper {
+    padding: 0 30px;
+  }
+  
+  .sliderButton {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .prevButton {
+    left: 0;
+  }
+  
+  .nextButton {
+    right: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .sliderButton {
+    width: 36px;
+    height: 36px;
+    display: flex;
+  }
+  
+  .sliderButton svg {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .prevButton {
+    left: -5px;
+  }
+  
+  .nextButton {
+    right: -5px;
+  }
+} 

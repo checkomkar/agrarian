@@ -1,0 +1,125 @@
+.footer {
+    background-color: #212529;
+    color: white;
+    padding: 4rem 0 2rem;
+}
+
+.container {
+    max-width: var(--container-width, 1200px);
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.footerMain {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    margin-bottom: 3rem;
+}
+
+.footerLogo img {
+    margin-bottom: 1.5rem;
+}
+
+.footerDesc {
+    color: #adb5bd;
+    line-height: 1.6;
+    max-width: 400px;
+}
+
+.footerLinks {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.linkColumn h4,
+.contactInfo h4 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    color: white;
+}
+
+.linkColumn ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.linkColumn li {
+    margin-bottom: 1rem;
+}
+
+.linkColumn li a {
+    color: #adb5bd;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.linkColumn li button {
+    background: none;
+    border: none;
+    color: #adb5bd;
+    font-family: inherit;
+    font-size: inherit;
+    padding: 0;
+    cursor: pointer;
+    text-align: left;
+    transition: color 0.3s ease;
+}
+
+.linkColumn li button:hover {
+    color: var(--primary);
+}
+
+.logoButton {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.address {
+    color: #adb5bd;
+    line-height: 1.6;
+}
+
+.copyright {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 2rem;
+    color: #adb5bd;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .footerMain {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+    
+    .footerLogo {
+        text-align: center;
+    }
+    
+    .footerDesc {
+        margin: 0 auto;
+    }
+    
+    .footerLinks {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .copyright {
+        font-size: 0.875rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .footerLinks {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+}

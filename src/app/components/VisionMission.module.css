@@ -1,0 +1,239 @@
+.visionMission {
+  padding: 8rem 0;
+  background: linear-gradient(to bottom, #ffffff, #f8fafc);
+  position: relative;
+  overflow: hidden;
+}
+
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 2rem;
+  position: relative;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 4rem;
+  position: relative;
+  z-index: 2;
+}
+
+.missionBox, .visionBox {
+  flex: 1;
+  background-color: #fff;
+  padding: 3rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+  position: relative;
+  transition: all 0.3s ease;
+  max-width: 500px;
+}
+
+.missionBox::before, .visionBox::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  border-radius: 20px 20px 0 0;
+}
+
+.missionBox::before {
+  background: linear-gradient(90deg, var(--primary) 0%, rgba(39, 174, 96, 0.7) 100%);
+}
+
+.visionBox::before {
+  background: linear-gradient(90deg, rgba(39, 174, 96, 0.7) 0%, var(--primary) 100%);
+}
+
+.missionBox:hover, .visionBox:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
+}
+
+.iconContainer {
+  width: 80px;
+  height: 80px;
+  background-color: rgba(39, 174, 96, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--dark-text);
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 50px;
+  height: 3px;
+  background-color: var(--primary);
+  border-radius: 3px;
+}
+
+.description {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--medium-text);
+  font-style: italic;
+}
+
+.divider {
+  width: 2px;
+  background: linear-gradient(to bottom, transparent, var(--primary), transparent);
+  position: relative;
+}
+
+.divider::before, .divider::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  width: 14px;
+  height: 14px;
+  background-color: var(--primary);
+  border-radius: 50%;
+  transform: translateX(-50%);
+}
+
+.divider::before {
+  top: calc(50% - 50px);
+}
+
+.divider::after {
+  bottom: calc(50% - 50px);
+}
+
+.decoration {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.decorationCircle1, .decorationCircle2 {
+  position: absolute;
+  border-radius: 50%;
+}
+
+.decorationCircle1 {
+  width: 300px;
+  height: 300px;
+  top: -100px;
+  left: -100px;
+  background: radial-gradient(circle, rgba(39, 174, 96, 0.05) 0%, rgba(39, 174, 96, 0.02) 50%, transparent 70%);
+}
+
+.decorationCircle2 {
+  width: 400px;
+  height: 400px;
+  bottom: -150px;
+  right: -150px;
+  background: radial-gradient(circle, rgba(39, 174, 96, 0.05) 0%, rgba(39, 174, 96, 0.02) 50%, transparent 70%);
+}
+
+.decorationLine1, .decorationLine2 {
+  position: absolute;
+  background-color: rgba(39, 174, 96, 0.1);
+  border-radius: 2px;
+}
+
+.decorationLine1 {
+  width: 150px;
+  height: 2px;
+  top: 25%;
+  right: 15%;
+  transform: rotate(45deg);
+}
+
+.decorationLine2 {
+  width: 100px;
+  height: 2px;
+  bottom: 20%;
+  left: 10%;
+  transform: rotate(-30deg);
+}
+
+@media (max-width: 1024px) {
+  .content {
+    gap: 3rem;
+  }
+  
+  .missionBox, .visionBox {
+    padding: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .visionMission {
+    padding: 6rem 0;
+  }
+  
+  .content {
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+  }
+  
+  .divider {
+    width: 80%;
+    height: 2px;
+    background: linear-gradient(to right, transparent, var(--primary), transparent);
+  }
+  
+  .divider::before, .divider::after {
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .divider::before {
+    left: calc(50% - 50px);
+  }
+  
+  .divider::after {
+    left: calc(50% + 50px);
+  }
+  
+  .missionBox, .visionBox {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .visionMission {
+    padding: 4rem 0;
+  }
+  
+  .iconContainer {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 1.5rem;
+  }
+  
+  .title {
+    font-size: 1.8rem;
+  }
+  
+  .description {
+    font-size: 1rem;
+  }
+  
+  .missionBox, .visionBox {
+    padding: 2rem;
+  }
+} 

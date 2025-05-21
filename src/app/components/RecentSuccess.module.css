@@ -1,0 +1,233 @@
+.recentSuccess {
+  padding: 7rem 0;
+  background-color: #ffffff;
+  position: relative;
+  overflow: hidden;
+}
+
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 2rem;
+  position: relative;
+  z-index: 2;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--dark-text);
+  position: relative;
+  display: inline-block;
+}
+
+.title::after {
+  content: '';
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, var(--primary), rgba(39, 174, 96, 0.5));
+  border-radius: 4px;
+}
+
+.storiesContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.storyCard {
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  position: relative;
+  height: 100%;
+}
+
+.storyCard:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.cardContent {
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.iconPlaceholder {
+  width: 80px;
+  height: 80px;
+  border-radius: 12px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+.storyTitle {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--dark-text);
+  margin-bottom: 1rem;
+  line-height: 1.3;
+}
+
+.storyDescription {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--medium-text);
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
+}
+
+.learnMore {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  color: var(--primary);
+  margin-top: auto;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.learnMore:hover {
+  gap: 0.75rem;
+}
+
+.ctaContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.ctaButton {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.875rem 1.75rem;
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 15px rgba(39, 174, 96, 0.2);
+}
+
+.ctaButton:hover {
+  background-color: #219653;
+  gap: 1rem;
+  box-shadow: 0 10px 20px rgba(39, 174, 96, 0.25);
+}
+
+/* Background elements */
+.backgroundElements {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.circle1, .circle2 {
+  position: absolute;
+  border-radius: 50%;
+}
+
+.circle1 {
+  width: 300px;
+  height: 300px;
+  top: -50px;
+  right: -100px;
+  background: radial-gradient(circle, rgba(39, 174, 96, 0.03) 0%, rgba(39, 174, 96, 0.01) 50%, transparent 70%);
+}
+
+.circle2 {
+  width: 400px;
+  height: 400px;
+  bottom: -150px;
+  left: -100px;
+  background: radial-gradient(circle, rgba(41, 128, 185, 0.03) 0%, rgba(41, 128, 185, 0.01) 60%, transparent 80%);
+}
+
+.pattern1, .pattern2 {
+  position: absolute;
+  opacity: 0.05;
+}
+
+.pattern1 {
+  width: 200px;
+  height: 200px;
+  top: 15%;
+  right: 5%;
+  background: linear-gradient(45deg, transparent 0%, var(--primary) 100%);
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+}
+
+.pattern2 {
+  width: 150px;
+  height: 150px;
+  bottom: 10%;
+  left: 10%;
+  background: linear-gradient(-45deg, transparent 0%, #2980B9 100%);
+  border-radius: 47% 53% 47% 53% / 36% 37% 63% 64%;
+}
+
+@media (max-width: 1024px) {
+  .storiesContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .recentSuccess {
+    padding: 5rem 0;
+  }
+  
+  .title {
+    font-size: 2.2rem;
+  }
+  
+  .storiesContainer {
+    grid-template-columns: 1fr;
+    max-width: 500px;
+    margin: 0 auto 2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .title {
+    font-size: 2rem;
+  }
+  
+  .iconPlaceholder {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .storyTitle {
+    font-size: 1.2rem;
+  }
+  
+  .cardContent {
+    padding: 1.5rem;
+  }
+} 

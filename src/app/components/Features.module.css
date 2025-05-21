@@ -1,0 +1,144 @@
+.features {
+  padding: 6rem 0;
+}
+
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.sectionHeader {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.sectionTag {
+  display: inline-block;
+  font-size: 0.9rem;
+  color: var(--medium-text);
+  margin-bottom: 1rem;
+}
+
+.sectionTitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--dark-text);
+  line-height: 1.3;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.featuresList {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.featureItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+.featureNumber {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--primary);
+  line-height: 1;
+  flex-shrink: 0;
+  background-color: rgba(39, 174, 96, 0.1);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.featureContent {
+  flex: 1;
+}
+
+.featureTitle {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--dark-text);
+  margin-bottom: 0.5rem;
+}
+
+.featureDesc {
+  font-size: 0.95rem;
+  color: var(--medium-text);
+  line-height: 1.6;
+}
+
+.featureImage {
+  position: relative;
+}
+
+.featureCard {
+  position: absolute;
+  bottom: -30px;
+  right: -30px;
+  background-color: white;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  border-radius: 10px;
+  width: 80%;
+  z-index: 2;
+}
+
+.cardTitle {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--dark-text);
+  margin-bottom: 0.8rem;
+}
+
+.cardDesc {
+  font-size: 0.9rem;
+  color: var(--medium-text);
+  line-height: 1.6;
+}
+
+@media (max-width: 992px) {
+  .content {
+    grid-template-columns: 1fr;
+  }
+  
+  .featureImage {
+    order: -1;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+  
+  .featureCard {
+    position: relative;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    margin-top: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .sectionTitle {
+    font-size: 2rem;
+  }
+  
+  .featureItem {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .featureContent {
+    width: 100%;
+  }
+} 

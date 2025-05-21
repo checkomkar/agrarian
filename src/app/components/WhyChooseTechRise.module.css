@@ -1,0 +1,202 @@
+.whyChoose {
+  padding: 7rem 0;
+  background-color: #f9fafb;
+  position: relative;
+  overflow: hidden;
+}
+
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 2rem;
+  position: relative;
+  z-index: 2;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--dark-text);
+  position: relative;
+  display: inline-block;
+}
+
+.title::after {
+  content: '';
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, var(--primary), rgba(39, 174, 96, 0.5));
+  border-radius: 4px;
+}
+
+.reasonsWrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2.5rem;
+}
+
+.reasonCard {
+  background-color: white;
+  border-radius: 16px;
+  padding: 2.5rem;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.reasonCard::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(90deg, var(--primary), rgba(39, 174, 96, 0.5));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease;
+  z-index: 1;
+}
+
+.reasonCard:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+.reasonCard:hover::before {
+  transform: scaleX(1);
+}
+
+.iconWrapper {
+  background-color: rgba(39, 174, 96, 0.1);
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.reasonCard:hover .iconWrapper {
+  background-color: rgba(39, 174, 96, 0.2);
+  transform: rotate(5deg);
+}
+
+.reasonTitle {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--dark-text);
+  margin-bottom: 1rem;
+}
+
+.reasonDescription {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--medium-text);
+}
+
+/* Decorative elements */
+.decorationElement {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.circle1, .circle2 {
+  position: absolute;
+  border-radius: 50%;
+}
+
+.circle1 {
+  width: 300px;
+  height: 300px;
+  top: -100px;
+  right: -50px;
+  background: radial-gradient(circle, rgba(39, 174, 96, 0.05) 0%, rgba(39, 174, 96, 0.02) 50%, transparent 70%);
+}
+
+.circle2 {
+  width: 400px;
+  height: 400px;
+  bottom: -150px;
+  left: -100px;
+  background: radial-gradient(circle, rgba(39, 174, 96, 0.03) 0%, rgba(39, 174, 96, 0.01) 60%, transparent 80%);
+}
+
+.line1, .line2 {
+  position: absolute;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, rgba(39, 174, 96, 0.1), transparent);
+}
+
+.line1 {
+  width: 300px;
+  top: 35%;
+  left: 10%;
+  transform: rotate(-25deg);
+}
+
+.line2 {
+  width: 200px;
+  bottom: 30%;
+  right: 15%;
+  transform: rotate(15deg);
+}
+
+@media (max-width: 1024px) {
+  .reasonsWrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .whyChoose {
+    padding: 5rem 0;
+  }
+  
+  .title {
+    font-size: 2.2rem;
+  }
+  
+  .reasonsWrapper {
+    grid-template-columns: 1fr;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .reasonCard {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .title {
+    font-size: 2rem;
+  }
+  
+  .iconWrapper {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .reasonTitle {
+    font-size: 1.2rem;
+  }
+} 

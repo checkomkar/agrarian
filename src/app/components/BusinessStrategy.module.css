@@ -1,0 +1,193 @@
+.businessStrategy {
+  padding: 7rem 0;
+  background-color: #f8f9fa;
+  position: relative;
+  overflow: hidden;
+}
+
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--dark-text);
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: var(--medium-text);
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.strategyContainer {
+  position: relative;
+}
+
+.strategyCards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.strategyCard {
+  background-color: white;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.strategyCard:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.strategyCard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 100%;
+  background-color: var(--primary);
+  opacity: 0.7;
+}
+
+.cardTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+}
+
+.iconContainer {
+  width: 64px;
+  height: 64px;
+  background-color: rgba(39, 174, 96, 0.1);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cardNumber {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: rgba(39, 174, 96, 0.2);
+}
+
+.cardContent {
+  flex: 1;
+}
+
+.cardTitle {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--dark-text);
+  margin-bottom: 1rem;
+}
+
+.cardDescription {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--medium-text);
+}
+
+.bgDecoration {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.shapeLine1, .shapeLine2 {
+  position: absolute;
+  height: 2px;
+  background-color: rgba(39, 174, 96, 0.1);
+}
+
+.shapeLine1 {
+  width: 30%;
+  top: 20%;
+  left: -10%;
+  transform: rotate(25deg);
+}
+
+.shapeLine2 {
+  width: 20%;
+  bottom: 15%;
+  right: -5%;
+  transform: rotate(-15deg);
+}
+
+.shapeCircle1, .shapeCircle2 {
+  position: absolute;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(39, 174, 96, 0.1) 0%, rgba(39, 174, 96, 0.02) 70%, transparent 100%);
+}
+
+.shapeCircle1 {
+  width: 300px;
+  height: 300px;
+  top: -150px;
+  right: -100px;
+}
+
+.shapeCircle2 {
+  width: 400px;
+  height: 400px;
+  bottom: -200px;
+  left: -150px;
+}
+
+@media (max-width: 1024px) {
+  .strategyCards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .businessStrategy {
+    padding: 5rem 0;
+  }
+  
+  .title {
+    font-size: 2rem;
+  }
+  
+  .strategyCards {
+    grid-template-columns: 1fr;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .header {
+    margin-bottom: 3rem;
+  }
+  
+  .strategyCard {
+    padding: 1.5rem;
+  }
+} 
