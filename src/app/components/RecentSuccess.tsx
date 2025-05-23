@@ -9,7 +9,7 @@ const successStories = [
 		description:
 			"Successfully developed and deployed a comprehensive platform for student performance tracking and teacher training across government schools.",
 		icon: "/images/success-education.svg",
-		bgColor: "rgba(39, 174, 96, 0.08)",
+		bgColor: "rgba(72, 25, 107, 0.08)",
 	},
 	{
 		id: 2,
@@ -58,21 +58,21 @@ const RecentSuccess = () => {
 											<>
 												<path
 													d="M12 2L2 7L12 12L22 7L12 2Z"
-													stroke="#27AE60"
+													stroke="#48196b"
 													strokeWidth="2"
 													strokeLinecap="round"
 													strokeLinejoin="round"
 												/>
 												<path
 													d="M2 17L12 22L22 17"
-													stroke="#27AE60"
+													stroke="#48196b"
 													strokeWidth="2"
 													strokeLinecap="round"
 													strokeLinejoin="round"
 												/>
 												<path
 													d="M2 12L12 17L22 12"
-													stroke="#27AE60"
+													stroke="#48196b"
 													strokeWidth="2"
 													strokeLinecap="round"
 													strokeLinejoin="round"

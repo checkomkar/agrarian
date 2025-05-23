@@ -81,7 +81,7 @@
 .iconContainer {
   width: 64px;
   height: 64px;
-  background-color: rgba(39, 174, 96, 0.1);
+  background-color: rgba(72, 25, 107, 0.1);
   border-radius: 12px;
   display: flex;
   align-items: center;
@@ -91,7 +91,7 @@
 .cardNumber {
   font-size: 1.5rem;
   font-weight: 800;
-  color: rgba(39, 174, 96, 0.2);
+  color: rgba(72, 25, 107, 0.2);
 }
 
 .cardContent {
@@ -123,7 +123,7 @@
 .shapeLine1, .shapeLine2 {
   position: absolute;
   height: 2px;
-  background-color: rgba(39, 174, 96, 0.1);
+  background-color: rgba(72, 25, 107, 0.1);
 }
 
 .shapeLine1 {
@@ -143,7 +143,7 @@
 .shapeCircle1, .shapeCircle2 {
   position: absolute;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(39, 174, 96, 0.1) 0%, rgba(39, 174, 96, 0.02) 70%, transparent 100%);
+  background: radial-gradient(circle, rgba(72, 25, 107, 0.1) 0%, rgba(72, 25, 107, 0.02) 70%, transparent 100%);
 }
 
 .shapeCircle1 {

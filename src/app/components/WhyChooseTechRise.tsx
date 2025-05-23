@@ -16,7 +16,7 @@ const reasons = [
 			>
 				<path
 					d="M22 12H18L15 21L9 3L6 12H2"
-					stroke="#27AE60"
+					stroke="#48196b"
 					strokeWidth="2"
 					strokeLinecap="round"
 					strokeLinejoin="round"
@@ -39,14 +39,14 @@ const reasons = [
 			>
 				<path
 					d="M12 20L12 4"
-					stroke="#27AE60"
+					stroke="#48196b"
 					strokeWidth="2"
 					strokeLinecap="round"
 					strokeLinejoin="round"
 				/>
 				<path
 					d="M5 13L12 20L19 13"
-					stroke="#27AE60"
+					stroke="#48196b"
 					strokeWidth="2"
 					strokeLinecap="round"
 					strokeLinejoin="round"
@@ -68,21 +68,21 @@ const reasons = [
 			>
 				<path
 					d="M12 15C15.866 15 19 11.866 19 8C19 4.13401 15.866 1 12 1C8.13401 1 5 4.13401 5 8C5 11.866 8.13401 15 12 15Z"
-					stroke="#27AE60"
+					stroke="#48196b"
 					strokeWidth="2"
 					strokeLinecap="round"
 					strokeLinejoin="round"
 				/>
 				<path
 					d="M12 15V23"
-					stroke="#27AE60"
+					stroke="#48196b"
 					strokeWidth="2"
 					strokeLinecap="round"
 					strokeLinejoin="round"
 				/>
 				<path
 					d="M9 18H15"
-					stroke="#27AE60"
+					stroke="#48196b"
 					strokeWidth="2"
 					strokeLinecap="round"
 					strokeLinejoin="round"
@@ -105,14 +105,14 @@ const reasons = [
 			>
 				<path
 					d="M7 11V7C7 5.67392 7.52678 4.40215 8.46447 3.46447C9.40215 2.52678 10.6739 2 12 2C13.3261 2 14.5979 2.52678 15.5355 3.46447C16.4732 4.40215 17 5.67392 17 7V11"
-					stroke="#27AE60"
+					stroke="#48196b"
 					strokeWidth="2"
 					strokeLinecap="round"
 					strokeLinejoin="round"
 				/>
 				<path
 					d="M5 11H19V22H5V11Z"
-					stroke="#27AE60"
+					stroke="#48196b"
 					strokeWidth="2"
 					strokeLinecap="round"
 					strokeLinejoin="round"
