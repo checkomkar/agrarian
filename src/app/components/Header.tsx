@@ -11,7 +11,7 @@ const Header = () => {
 	const [activeSection, setActiveSection] = useState("hero");
 
 	// Logo changes based on scroll state
-	const logoSrc = scrolled ? "/images/logo-dark.png" : "/images/logo-light.svg";
+	const logoSrc = scrolled ? "/images/logo-dark.png" : "/images/logo-white.png";
 
 	const toggleMobileMenu = () => {
 		setMobileMenuOpen(!mobileMenuOpen);
@@ -77,7 +77,7 @@ const Header = () => {
 							src={logoSrc}
 							alt="Tech-Rise Logo"
 							width={140}
-							height={50}
+							height={60}
 							priority
 						/>
 					</Link>

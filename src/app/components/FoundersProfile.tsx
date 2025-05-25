@@ -178,9 +178,7 @@ const FoundersProfile = () => {
 			<div className={styles.container}>
 				<div className={styles.header}>
 					<h2 className={styles.title}>Meet Our Team</h2>
-					<p className={styles.subtitle}>
-						Meet the visionaries behind TechRise
-					</p>
+					<p className={styles.subtitle}>Meet the visionaries behind AGARIAN</p>
 				</div>
 
 				<div className={styles.sliderWrapper}>

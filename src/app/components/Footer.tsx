@@ -23,14 +23,14 @@ const Footer = () => {
 							className={styles.logoButton}
 						>
 							<Image
-								src="/images/logo-light.svg"
+								src="/images/logo-white.png"
 								alt="Tech-Rise Logo"
 								width={150}
-								height={40}
+								height={60}
 							/>
 						</button>
 						<p className={styles.footerDesc}>
-							At TechRise, we do more than just set up company - we are a hub of
+							At AGARIAN, we do more than just set up company - we are a hub of
 							creativity, expertise, and technological excellence. We focus on
 							pushing the boundaries with innovation, design, and development
 							solutions.
@@ -70,19 +70,19 @@ const Footer = () => {
 						<div className={styles.contactInfo}>
 							<h4>Contact us</h4>
 							<p className={styles.address}>
-								TechRise Meydan Grandstand, 6th floor, Meydan Road, Nad Al
+								AGARIAN Meydan Grandstand, 6th floor, Meydan Road, Nad Al
 								<br />
 								Sheba, Dubai, UAE <br />
-								Email: support@techrise.tech <br />
+								Email: support@agarian.tech <br />
 								Phone: +971-567577300 <br />
-								Website: www.techrise.tech
+								Website: www.agarian.tech
 							</p>
 						</div>
 					</div>
 				</div>
 
 				<div className={styles.copyright}>
-					<p>&copy; 2023 All Rights Reserved. TechRise</p>
+					<p>&copy; 2017 All Rights Reserved. AGARIAN</p>
 				</div>
 			</div>
 		</footer>

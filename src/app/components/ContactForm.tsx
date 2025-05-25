@@ -69,7 +69,7 @@ const ContactForm = () => {
 					<div className={styles.formHeader}>
 						<h2 className={styles.title}>Contact Us</h2>
 						<p className={styles.subtitle}>
-							Have questions or want to discuss how TechRise can help your
+							Have questions or want to discuss how AGARIAN can help your
 							organization? Fill out the form below and our team will get back
 							to you within 24 hours.
 						</p>
@@ -112,7 +112,7 @@ const ContactForm = () => {
 								<div className={styles.infoContent}>
 									<h3>Our Location</h3>
 									<p>
-										TechRise Meydan Grandstand, 6th floor, Meydan Road, Nad Al
+										AGARIAN Meydan Grandstand, 6th floor, Meydan Road, Nad Al
 										Sheba, Dubai, UAE
 									</p>
 								</div>
@@ -169,7 +169,7 @@ const ContactForm = () => {
 								</div>
 								<div className={styles.infoContent}>
 									<h3>Email Address</h3>
-									<p>support@techrise.tech</p>
+									<p>support@agarian.tech</p>
 								</div>
 							</div>
 						</div>

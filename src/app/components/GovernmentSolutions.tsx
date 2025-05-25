@@ -18,7 +18,7 @@ const GovernmentSolutions = () => {
 						<div className={styles.imageWrapper}>
 							<Image
 								src="/images/govt-sol.jpg"
-								alt="TechRise Government Solutions"
+								alt="AGARIAN Government Solutions"
 								width={600}
 								height={400}
 								className={styles.mainImage}

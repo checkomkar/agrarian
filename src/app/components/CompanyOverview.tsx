@@ -9,7 +9,7 @@ const CompanyOverview = () => {
 					<div className={styles.textContent}>
 						<h2 className={styles.title}>Company Overview</h2>
 						<p className={styles.description}>
-							TechRise is a registered technology company in Dubai, UAE,
+							AGARIAN is a registered technology company in Dubai, UAE,
 							co-founded by Saket Sinha and Ritesh Thakur with a 50/50
 							partnership. The company specializes in providing custom software
 							solutions for government entities globally, with a strong focus on

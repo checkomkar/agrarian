@@ -252,8 +252,8 @@ const BusinessStrategy = () => {
 				<div className={styles.header}>
 					<h2 className={styles.title}>Business Strategy</h2>
 					<p className={styles.subtitle}>
-						TechRise follows a strategic approach focused on delivering
-						long-term value to government and enterprise clients through:
+						AGARIAN follows a strategic approach focused on delivering long-term
+						value to government and enterprise clients through:
 					</p>
 				</div>
 
