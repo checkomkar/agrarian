@@ -127,7 +127,7 @@ const WhyChooseTechRise = () => {
 		<section className={styles.whyChoose}>
 			<div className={styles.container}>
 				<div className={styles.header}>
-					<h2 className={styles.title}>Why Choose TechRise?</h2>
+					<h2 className={styles.title}>Why Choose AGARIAN?</h2>
 				</div>
 
 				<div className={styles.reasonsWrapper}>

@@ -5,7 +5,7 @@ import Image from "next/image";
 const successStories = [
 	{
 		id: 1,
-		title: "Education Platform for Government Schools",
+		title: "Batumi Goverment School app",
 		description:
 			"Successfully developed and deployed a comprehensive platform for student performance tracking and teacher training across government schools.",
 		icon: "/images/success-education.svg",
@@ -13,7 +13,7 @@ const successStories = [
 	},
 	{
 		id: 2,
-		title: "AI-Driven Governance Platform",
+		title: "Auditra: The Media Inc",
 		description:
 			"Enabled real-time decision-making and resource allocation through AI-based analytics for enterprises.",
 		icon: "/images/success-ai.svg",
@@ -21,10 +21,10 @@ const successStories = [
 	},
 	{
 		id: 3,
-		title: "Smart Infrastructure Projects",
+		title: "Gyana",
 		description:
-			"Developed smart city (real-estate, AI and digital transformations) infrastructure solutions to enhance operational efficiency and citizen engagement.",
-		icon: "/images/success-infrastructure.svg",
+			"Gyana is transforming learning experiences for government schools and institutions with accessible and innovative solutions.",
+		icon: "/images/gyana.svg",
 		bgColor: "rgba(142, 68, 173, 0.08)",
 	},
 ];
@@ -46,92 +46,83 @@ const RecentSuccess = () => {
 						>
 							<div className={styles.cardContent}>
 								<div className={styles.iconPlaceholder}>
-									<svg
-										width="48"
-										height="48"
-										viewBox="0 0 24 24"
-										fill="none"
-										xmlns="http://www.w3.org/2000/svg"
-									>
-										{story.id === 1 && (
-											// Education icon
-											<>
-												<path
-													d="M12 2L2 7L12 12L22 7L12 2Z"
-													stroke="#48196b"
-													strokeWidth="2"
-													strokeLinecap="round"
-													strokeLinejoin="round"
-												/>
-												<path
-													d="M2 17L12 22L22 17"
-													stroke="#48196b"
-													strokeWidth="2"
-													strokeLinecap="round"
-													strokeLinejoin="round"
-												/>
-												<path
-													d="M2 12L12 17L22 12"
-													stroke="#48196b"
-													strokeWidth="2"
-													strokeLinecap="round"
-													strokeLinejoin="round"
-												/>
-											</>
-										)}
-										{story.id === 2 && (
-											// AI icon
-											<>
-												<path
-													d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
-													stroke="#2980B9"
-													strokeWidth="2"
-													strokeLinecap="round"
-													strokeLinejoin="round"
-												/>
-												<path
-													d="M12 17C14.7614 17 17 14.7614 17 12C17 9.23858 14.7614 7 12 7C9.23858 7 7 9.23858 7 12C7 14.7614 9.23858 17 12 17Z"
-													stroke="#2980B9"
-													strokeWidth="2"
-													strokeLinecap="round"
-													strokeLinejoin="round"
-												/>
-												<path
-													d="M12 12V9.5"
-													stroke="#2980B9"
-													strokeWidth="2"
-													strokeLinecap="round"
-													strokeLinejoin="round"
-												/>
-												<path
-													d="M14 13.5L12 12"
-													stroke="#2980B9"
-													strokeWidth="2"
-													strokeLinecap="round"
-													strokeLinejoin="round"
-												/>
-											</>
-										)}
-										{story.id === 3 && (
-											// Infrastructure icon
-											<>
-												<path
-													d="M3 9L12 2L21 9V22H3V9Z"
-													stroke="#8E44AD"
-													strokeWidth="2"
-													strokeLinecap="round"
-													strokeLinejoin="round"
-												/>
-												<path
-													d="M9 22V12H15V22"
-													stroke="#8E44AD"
-													strokeWidth="2"
-													strokeLinecap="round"
-													strokeLinejoin="round"
-												/>
-											</>
-										)}
-									</svg>
+									{story.id !== 3 && (
+										<svg
+											width="48"
+											height="48"
+											viewBox="0 0 24 24"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											{story.id === 1 && (
+												// Education icon
+												<>
+													<path
+														d="M12 2L2 7L12 12L22 7L12 2Z"
+														stroke="#48196b"
+														strokeWidth="2"
+														strokeLinecap="round"
+														strokeLinejoin="round"
+													/>
+													<path
+														d="M2 17L12 22L22 17"
+														stroke="#48196b"
+														strokeWidth="2"
+														strokeLinecap="round"
+														strokeLinejoin="round"
+													/>
+													<path
+														d="M2 12L12 17L22 12"
+														stroke="#48196b"
+														strokeWidth="2"
+														strokeLinecap="round"
+														strokeLinejoin="round"
+													/>
+												</>
+											)}
+											{story.id === 2 && (
+												// AI icon
+												<>
+													<path
+														d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+														stroke="#2980B9"
+														strokeWidth="2"
+														strokeLinecap="round"
+														strokeLinejoin="round"
+													/>
+													<path
+														d="M12 17C14.7614 17 17 14.7614 17 12C17 9.23858 14.7614 7 12 7C9.23858 7 7 9.23858 7 12C7 14.7614 9.23858 17 12 17Z"
+														stroke="#2980B9"
+														strokeWidth="2"
+														strokeLinecap="round"
+														strokeLinejoin="round"
+													/>
+													<path
+														d="M12 12V9.5"
+														stroke="#2980B9"
+														strokeWidth="2"
+														strokeLinecap="round"
+														strokeLinejoin="round"
+													/>
+													<path
+														d="M14 13.5L12 12"
+														stroke="#2980B9"
+														strokeWidth="2"
+														strokeLinecap="round"
+														strokeLinejoin="round"
+													/>
+												</>
+											)}
+										</svg>
+									)}
+									{story.id === 3 && (
+										<Image
+											src="/images/gyana.svg"
+											alt="Gyana"
+											width={60}
+											height={60}
+										/>
+									)}
 								</div>
 								<h3 className={styles.storyTitle}>{story.title}</h3>
 								<p className={styles.storyDescription}>{story.description}</p>

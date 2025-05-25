@@ -111,10 +111,7 @@ const ContactForm = () => {
 								</div>
 								<div className={styles.infoContent}>
 									<h3>Our Location</h3>
-									<p>
-										AGARIAN Meydan Grandstand, 6th floor, Meydan Road, Nad Al
-										Sheba, Dubai, UAE
-									</p>
+									<p>AGARIAN Global Pvt Ltd, Gurgaon, NCR, India</p>
 								</div>
 							</div>
 
@@ -138,7 +135,7 @@ const ContactForm = () => {
 								</div>
 								<div className={styles.infoContent}>
 									<h3>Contact Number</h3>
-									<p>+971-567577300</p>
+									<p>+91 80959 24992</p>
 								</div>
 							</div>
 

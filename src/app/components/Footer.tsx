@@ -70,11 +70,11 @@ const Footer = () => {
 						<div className={styles.contactInfo}>
 							<h4>Contact us</h4>
 							<p className={styles.address}>
-								AGARIAN Meydan Grandstand, 6th floor, Meydan Road, Nad Al
+								AGARIAN Global Pvt Ltd
 								<br />
-								Sheba, Dubai, UAE <br />
+								Gurgaon, NCR, India <br />
 								Email: support@agarian.tech <br />
-								Phone: +971-567577300 <br />
+								Phone: +91-80959 24992 <br />
 								Website: www.agarian.tech
 							</p>
 						</div>
