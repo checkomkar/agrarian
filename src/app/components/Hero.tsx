@@ -15,7 +15,7 @@ const Hero = () => {
 			<div className={styles.overlay}></div>
 			<div className={styles.content}>
 				<h1 className={styles.title}>
-					We are AGARIAN,
+					We are Agrarian,
 					<br />
 					We Visualize people Dream's
 				</h1>

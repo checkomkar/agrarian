@@ -8,7 +8,7 @@ const testimonials = [
 	{
 		id: 1,
 		content:
-			"I have been a customer of AGARIAN for several years now and I am extremely impressed with their level of professionalism, and what sets AGARIAN apart from other development companies is their ability to communicate effectively with their clients. I highly recommend AGARIAN to anyone looking for reliable and efficient development services.",
+			"I have been a customer of Agrarian for several years now and I am extremely impressed with their level of professionalism, and what sets Agrarian apart from other development companies is their ability to communicate effectively with their clients. I highly recommend Agrarian to anyone looking for reliable and efficient development services.",
 		author: "Mr. Mohammad Ruhul",
 		position: "CEO",
 		company: "XYZ Corp",
@@ -17,7 +17,7 @@ const testimonials = [
 	{
 		id: 2,
 		content:
-			"AGARIAN transformed our digital presence completely. Their team showed exceptional creativity and technical expertise throughout our project. The results exceeded our expectations and we've seen significant improvement in user engagement since launch.",
+			"Agrarian transformed our digital presence completely. Their team showed exceptional creativity and technical expertise throughout our project. The results exceeded our expectations and we've seen significant improvement in user engagement since launch.",
 		author: "Sarah Johnson",
 		position: "Marketing Director",
 		company: "Global Innovations",
@@ -26,7 +26,7 @@ const testimonials = [
 	{
 		id: 3,
 		content:
-			"Working with AGARIAN has been a game-changer for our startup. Their development team created an intuitive, scalable platform that our users love. The support throughout the entire process was outstanding.",
+			"Working with Agrarian has been a game-changer for our startup. Their development team created an intuitive, scalable platform that our users love. The support throughout the entire process was outstanding.",
 		author: "David Chen",
 		position: "Founder",
 		company: "NextGen Solutions",

@@ -36,6 +36,9 @@ export default function Home() {
 				<div id="core-offerings">
 					<CoreOfferings />
 				</div>
+				<div id="recent-success">
+					<RecentSuccess />
+				</div>
 				<div id="key-strengths">
 					<KeyStrengths />
 				</div>
@@ -51,9 +54,7 @@ export default function Home() {
 				<div id="founders-profile">
 					<FoundersProfile />
 				</div>
-				<div id="recent-success">
-					<RecentSuccess />
-				</div>
+
 				<div id="contact">
 					<ContactForm />
 				</div>

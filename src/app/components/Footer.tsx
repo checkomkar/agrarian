@@ -30,7 +30,7 @@ const Footer = () => {
 							/>
 						</button>
 						<p className={styles.footerDesc}>
-							At AGARIAN, we do more than just set up company - we are a hub of
+							At Agrarian, we do more than just set up company - we are a hub of
 							creativity, expertise, and technological excellence. We focus on
 							pushing the boundaries with innovation, design, and development
 							solutions.
@@ -70,7 +70,7 @@ const Footer = () => {
 						<div className={styles.contactInfo}>
 							<h4>Contact us</h4>
 							<p className={styles.address}>
-								AGARIAN Global Pvt Ltd
+								Agrarian Global Pvt Ltd
 								<br />
 								Gurgaon, NCR, India <br />
 								Email: support@agarian.tech <br />
@@ -82,7 +82,7 @@ const Footer = () => {
 				</div>
 
 				<div className={styles.copyright}>
-					<p>&copy; 2017 All Rights Reserved. AGARIAN</p>
+					<p>&copy; 2017 All Rights Reserved. Agrarian</p>
 				</div>
 			</div>
 		</footer>

@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./RecentSuccess.module.css";
 import Image from "next/image";
-
+import cx from "classnames";
 const successStories = [
 	{
 		id: 1,
@@ -45,8 +45,14 @@ const RecentSuccess = () => {
 							style={{ backgroundColor: story.bgColor }}
 						>
 							<div className={styles.cardContent}>
-								<div className={styles.iconPlaceholder}>
-									{story.id !== 3 && (
+								<div
+									className={cx(styles.iconPlaceholder, {
+										[styles.iconPlaceholder1]: story.id === 1,
+										[styles.iconPlaceholder2]: story.id === 2,
+										[styles.iconPlaceholder3]: story.id === 3,
+									})}
+								>
+									{story.id === 1 && (
 										<svg
 											width="48"
 											height="48"
@@ -54,66 +60,36 @@ const RecentSuccess = () => {
 											fill="none"
 											xmlns="http://www.w3.org/2000/svg"
 										>
-											{story.id === 1 && (
-												// Education icon
-												<>
-													<path
-														d="M12 2L2 7L12 12L22 7L12 2Z"
-														stroke="#48196b"
-														strokeWidth="2"
-														strokeLinecap="round"
-														strokeLinejoin="round"
-													/>
-													<path
-														d="M2 17L12 22L22 17"
-														stroke="#48196b"
-														strokeWidth="2"
-														strokeLinecap="round"
-														strokeLinejoin="round"
-													/>
-													<path
-														d="M2 12L12 17L22 12"
-														stroke="#48196b"
-														strokeWidth="2"
-														strokeLinecap="round"
-														strokeLinejoin="round"
-													/>
-												</>
-											)}
-											{story.id === 2 && (
-												// AI icon
-												<>
-													<path
-														d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
-														stroke="#2980B9"
-														strokeWidth="2"
-														strokeLinecap="round"
-														strokeLinejoin="round"
-													/>
-													<path
-														d="M12 17C14.7614 17 17 14.7614 17 12C17 9.23858 14.7614 7 12 7C9.23858 7 7 9.23858 7 12C7 14.7614 9.23858 17 12 17Z"
-														stroke="#2980B9"
-														strokeWidth="2"
-														strokeLinecap="round"
-														strokeLinejoin="round"
-													/>
-													<path
-														d="M12 12V9.5"
-														stroke="#2980B9"
-														strokeWidth="2"
-														strokeLinecap="round"
-														strokeLinejoin="round"
-													/>
-													<path
-														d="M14 13.5L12 12"
-														stroke="#2980B9"
-														strokeWidth="2"
-														strokeLinecap="round"
-														strokeLinejoin="round"
-													/>
-												</>
-											)}
+											<path
+												d="M12 2L2 7L12 12L22 7L12 2Z"
+												stroke="#48196b"
+												strokeWidth="2"
+												strokeLinecap="round"
+												strokeLinejoin="round"
+											/>
+											<path
+												d="M2 17L12 22L22 17"
+												stroke="#48196b"
+												strokeWidth="2"
+												strokeLinecap="round"
+												strokeLinejoin="round"
+											/>
+											<path
+												d="M2 12L12 17L22 12"
+												stroke="#48196b"
+												strokeWidth="2"
+												strokeLinecap="round"
+												strokeLinejoin="round"
+											/>
 										</svg>
+									)}
+									{story.id === 2 && (
+										<Image
+											src="/images/auditra.png"
+											alt="AI"
+											width={180}
+											height={48}
+										/>
 									)}
 									{story.id === 3 && (
 										<Image

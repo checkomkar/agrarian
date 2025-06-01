@@ -69,7 +69,7 @@ const ContactForm = () => {
 					<div className={styles.formHeader}>
 						<h2 className={styles.title}>Contact Us</h2>
 						<p className={styles.subtitle}>
-							Have questions or want to discuss how AGARIAN can help your
+							Have questions or want to discuss how Agrarian can help your
 							organization? Fill out the form below and our team will get back
 							to you within 24 hours.
 						</p>
@@ -111,7 +111,7 @@ const ContactForm = () => {
 								</div>
 								<div className={styles.infoContent}>
 									<h3>Our Location</h3>
-									<p>AGARIAN Global Pvt Ltd, Gurgaon, NCR, India</p>
+									<p>Agrarian Global Pvt Ltd, Gurgaon, NCR, India</p>
 								</div>
 							</div>
 
